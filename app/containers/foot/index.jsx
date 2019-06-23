@@ -4,6 +4,7 @@ import "./index.scss"
 export default class Foot extends Component {
     render(){
         const { goNext,cancel } = this.props
+        console.log(goNext)
         return (
             <div className="foot-export-div">
                 <div className="foot-left" onClick={ cancel }></div>

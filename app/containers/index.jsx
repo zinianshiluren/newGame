@@ -7,19 +7,32 @@ class Container extends Component {
         this.state = {
             page : 0,
         }
+        this.goNextPage = this.goNextPage.bind(this);
+        this.goCancel = this.goCancel.bind(this);
+    }
+    goNextPage (){
+        this.setState({ page:1 })
+        // let  page  = this.state.page
+        // this.setState({ page:page++})
+    }
+    goCancel (){
+        this.setState({ page:1})
     }
     getContent(){
         if (this.state.page==0){
-            <Predraw/>
+            return <Predraw goNextPage={ this.goNextPage } goCancel={ this.goCancel }/>
+        }
+        if (this.state.page==1){
+            {/*<Predraw goNextPage={this.goNextPage} goCancel={this.goCancel}/>*/}
+            return <p>111</p>
         }
     }
 
     render(){
-        const {page} = this.state
         return (
-            getContent()
+            this.getContent()
         )
     }
 }
 
-export default Predraw;
+export default Container;
