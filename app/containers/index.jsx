@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import Predraw from './predraw/predraw'
+import First from './first/index'
 
 class Container extends Component {
     constructor(...args){
@@ -24,7 +25,7 @@ class Container extends Component {
         }
         if (this.state.page==1){
             {/*<Predraw goNextPage={this.goNextPage} goCancel={this.goCancel}/>*/}
-            return <p>111</p>
+            return <First/>
         }
     }
 
