@@ -12,7 +12,9 @@ class Container extends Component {
         this.goCancel = this.goCancel.bind(this);
     }
     goNextPage (){
-        this.setState({ page:1 })
+        let  page  = this.state.page
+        page++
+        this.setState({ page:page })
         // let  page  = this.state.page
         // this.setState({ page:page++})
     }

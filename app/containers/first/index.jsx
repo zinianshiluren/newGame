@@ -9,25 +9,25 @@ class First extends Component {
             childList : [1,2,3,4],
             choose : null,
         }
-        this.goNextPage = this.goNextPage.bind(this);
-        this.goCancel = this.goCancel.bind(this);
+        this.render = this.render.bind(this);
     }
 
     render(){
+        const { childList } = this.state
         const { goNextPage,goCancel } = this.props
-        // const { childList } = this.state
-        // console.log(childList)
         return (
             <div>
                 <div className="first-dialog"></div>
                 <div>
                     <div className="first-container"/>
                 </div>
-                {
-                    ()=>{
+                <div className="first-flex">
+                    {childList.map(() => {
+                        return (<div></div>)
+                    })}
+                </div>
 
-                    }
-                }
+
                 <div></div>
                 <Foot goNext={ goNextPage } cancel={ goCancel }/>
             </div>
