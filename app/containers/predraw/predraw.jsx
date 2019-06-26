@@ -4,12 +4,6 @@ import './index.scss'
 
 class Predraw extends Component {
 
-    goNext (){
-        alert("点击下一步")
-    }
-    cancel (){
-        alert("点击返回")
-    }
     render(){
         const { goNextPage,goCancel } = this.props
         return (

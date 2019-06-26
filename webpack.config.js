@@ -39,13 +39,13 @@ module.exports = {
 			test: /\.jsx?$/,
 			loaders: ['babel-loader']
 		}, // loader 的配置
-			{
-				test: /\.(png|jpg|gif)$/,
-				loader: 'file-loader',
-				query:{
-					name:'img/[name]-[hash:5].[ext]'  //这里img是存放打包后图片文件夹，结合publicPath来看就是/webBlog/build/img文件夹中，后边接的是打包后图片的命名方式。
-				}
-			},
+			// {
+			// 	test: /\.(png|jpg|gif)$/,
+			// 	loader: 'file-loader',
+			// 	query:{
+			// 		name:'img/[name]-[hash:5].[ext]'  //这里img是存放打包后图片文件夹，结合publicPath来看就是/webBlog/build/img文件夹中，后边接的是打包后图片的命名方式。
+			// 	}
+			// },
 			{
 				test: /\.(js|jsx)$/,
 				loader:'babel-loader',
@@ -64,7 +64,22 @@ module.exports = {
 						}]
 					]
 				}
-			}
+			},
+			{
+				// 正则匹配所有以.png,jpg,gif结尾的文件
+				test: /\.(png|jpg|gif)$/,
+				// 使用url-loader对图片进行处理
+				use: [
+					{
+						loader: 'url-loader',
+						// 将小于8K的图片以base64的形式打包到js文件中
+						options: {
+							limit: 8192,
+							name:'img/[name].[hash:7].[ext]'
+						},
+					}
+				]
+			},
 			]
 		},
 }

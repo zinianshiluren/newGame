@@ -1,0 +1,16 @@
+.second-dialog{
+  width: 805px;
+  height: 535px;
+  background-image: url("../../resource/pic/second/对话.png");
+  margin: calc((100vh)*0.2) calc((100% - 805px)/2);
+}
+.second-spiderman1{
+  position: absolute;
+  right: 0;
+  top: 300px
+}
+.second-spiderman2{
+  position: absolute;
+  left: 0;
+  top: 1000px
+}

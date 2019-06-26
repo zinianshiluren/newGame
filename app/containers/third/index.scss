@@ -1,0 +1,28 @@
+.third-flex-container{
+  display: flex;
+  flex-direction: column;
+  //background: antiquewhite;
+  height: calc((100vh) - 220px);
+  align-items:center;
+  div{
+    flex: 1;
+  }
+}
+.third-dialog{
+  width: 805px;
+  min-height: 535px;
+  background-image: url("../../resource/pic/third/对话.png");
+  margin: 100px auto 0px;
+  background-repeat: no-repeat;
+}
+.third-vedio{
+  width: 805px;
+  background: antiquewhite;
+  text-align: center;
+  font-size: 20px;
+}
+.third-children{
+  width: 495px;
+  background-image: url("../../resource/pic/third/人.png");
+  background-repeat: no-repeat;
+}
