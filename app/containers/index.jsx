@@ -12,6 +12,7 @@ import Nine from './nine/index'
 import Ten from './ten/index'
 import Eleven from './eleven/index'
 import Twelve from './twelve/index'
+import './index.scss'
 
 
 class Container extends Component {

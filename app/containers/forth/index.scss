@@ -1,0 +1,18 @@
+.forth-flex-container{
+  display: flex;
+  flex-direction: column;
+  //background: antiquewhite;
+  height: calc((100vh) - 220px);
+  align-items:center;
+  div{
+    flex: 1;
+  }
+}
+.forth-dialog{
+  width: 805px;
+  min-height: 535px;
+  background-image: url("../../resource/pic/forth/对话.png");
+  margin: 100px auto 0px;
+  background-repeat: no-repeat;
+}
+

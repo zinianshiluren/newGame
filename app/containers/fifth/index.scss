@@ -1,0 +1,36 @@
+.forth-flex-container{
+  display: flex;
+  flex-direction: column;
+  //background: antiquewhite;
+  height: calc((100vh) - 220px);
+  align-items:center;
+  div{
+    flex: 1;
+  }
+}
+.fifth-dialog{
+  width: 805px;
+  min-height: 535px;
+  background-image: url("../../resource/pic/fifth/对话.png");
+  margin: 100px auto 0px;
+  background-repeat: no-repeat;
+}
+.fifth-diamond{
+  min-height: 535px;
+  text-align: center;
+  margin-top: 200px;
+  padding-right: 100px;
+  //background-image: url("../../resource/pic/fifth/钻石.png");
+  //background-repeat: no-repeat;
+  //background: aquamarine;
+}
+.fifth-superman{
+  position: absolute;
+  right: 0px;
+  bottom: 500px;
+}
+.fifth-word{
+  position: absolute;
+  bottom: 233px;
+  left: calc((100% - 708px)/2)
+}
