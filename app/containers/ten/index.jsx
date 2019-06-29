@@ -6,7 +6,10 @@ export default class Ten extends Component {
     render(){
         const { goNextPage,goCancel } = this.props
         return(
-            <Foot goNext={ goNextPage } cancel={ goCancel }/>
+            <div className="forth-flex-container">
+                <div className="ten-dialog"></div>
+                <Foot goNext={ goNextPage } cancel={ goCancel }/>
+            </div>
         )
     }
 }

@@ -15,4 +15,27 @@
   margin: 100px auto 0px;
   background-repeat: no-repeat;
 }
+.forth-checkbox{
+  zoom:280%;
+}
+.forth-radio-group{
+  height: 270px;
+  background: #c4defe;
+  width: 80%;
+  margin-left: calc(10%);
+  margin-bottom: calc(((100vh) - 950px - 250px*3)/3);
+}
+.forth-tiStyle{
+  font-size: 45px;
+  font-weight: 600;
+  margin-left: 80px;
+}
+.forth-radioStyle{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+  zoom: 180%;
+}
 

@@ -11,6 +11,6 @@ var root = document.createElement('div');
 root.className='wrapper';
 document.body.appendChild(root);
 
-render(<Container/>, root);
+render(<Container />, root);
 
 

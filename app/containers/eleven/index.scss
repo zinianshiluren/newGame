@@ -1,0 +1,24 @@
+.eleven-backgrand{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../resource/pic/eleven/背景.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.eleven-container{
+  padding-top: 200px;
+  width: 766px;
+  height: 830px;
+  //margin: 200px auto 0px;
+  position: absolute;
+  top: 300px;
+  left: calc((100% - 766px)/2);
+  background-image: url("../../resource/pic/eleven/英雄称号.png");
+  text-align: center;
+}
+.eleven-right-bottom{
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  text-align: center;
+}

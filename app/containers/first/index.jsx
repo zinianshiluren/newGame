@@ -1,10 +1,10 @@
 import React,{Component} from "react";
 import Foot from '../foot/index'
 import './index.scss'
-import child1 from '../../resource/pic/first/人1.png'
-import child2 from '../../resource/pic/first/人2.png'
-import child3 from '../../resource/pic/first/人3.png'
-import child4 from '../../resource/pic/first/人4.png'
+import child0 from '../../resource/pic/first/childaction1.gif'
+import child1 from '../../resource/pic/first/childaction2.gif'
+import child2 from '../../resource/pic/first/childaction3.gif'
+import child3 from '../../resource/pic/first/childaction4.gif'
 
 class First extends Component {
     constructor(...args){
@@ -17,19 +17,23 @@ class First extends Component {
     }
 
     render(){
-        let arr = [child1, child2, child3, child4];
-        const { childList } = this.state
+        let arr = [child0, child1, child2, child3];
+        const { childList,choose } = this.state
         const { goNextPage,goCancel } = this.props
         return (
             <div>
                 <div className="first-dialog"></div>
                 <div>
-                    <div className="first-container"/>
+                    <div className="first-container">
+                        {choose!=null&&
+                        <img src={arr[choose]} width={"420px"}/>
+                        }
+                    </div>
                 </div>
                 <div className="first-flex">
                     {childList.map((item,index) => {
                         return (
-                            <div key={item}><img src={arr[index]}/></div>
+                            <div key={item}><img src={arr[index]} width={"220px"} onClick={()=>{this.setState({choose:index})}}/></div>
                         )
                     })}
                 </div>

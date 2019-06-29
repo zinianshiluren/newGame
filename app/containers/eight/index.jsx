@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Foot from "../foot";
 import './index.scss'
-import {Radio} from "antd";
+import superman from "../../resource/pic/eight/超人.png";
 
 export default class Eight extends Component {
     constructor(...args){
@@ -32,51 +32,9 @@ export default class Eight extends Component {
         return(
             <div className="forth-flex-container">
                 <div className="eight-dialog"></div>
-                <div>
-                    <p style={TiStyle}>1.地震发生时，感觉</p>
-                    <Radio.Group size="large" value={this.state.value}>
-                        <Radio  style={radioStyle} value={1}>
-                            A.先摇后晃
-                        </Radio>
-                        <Radio style={radioStyle} value={2}>
-                            B.先晃后摇
-                        </Radio>
-                        <Radio style={radioStyle} value={3}>
-                            C.同时发生
-                        </Radio>
-                    </Radio.Group>
-                </div>
-                <div>
-                    <p style={TiStyle}>2.海底地震可能会引起</p>
-                    <Radio.Group size="large" value={this.state.value}>
-                        <Radio  style={radioStyle} value={1}>
-                            A.狂风暴雨
-                        </Radio>
-                        <Radio style={radioStyle} value={2}>
-                            B.海啸
-                        </Radio>
-                        <Radio style={radioStyle} value={3}>
-                            C.海平面下降
-                        </Radio>
-                    </Radio.Group>
-                </div>
-                <div>
-                    <p style={TiStyle}>3.下面哪个不是地震造成的现象</p>
-                    <Radio.Group size="large" value={this.state.value}>
-                        <Radio  style={radioStyle} value={1}>
-                            A.山崩地裂
-                        </Radio>
-                        <Radio style={radioStyle} value={2}>
-                            B.房屋倒塌
-                        </Radio>
-                        <Radio style={radioStyle} value={3}>
-                            C.极光现象
-                        </Radio>
-                    </Radio.Group>
-                </div>
+                <div><img src={superman}/></div>
                 <Foot goNext={ goNextPage } cancel={ goCancel }/>
             </div>
-
         )
     }
 }
